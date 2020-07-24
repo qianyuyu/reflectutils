@@ -31,7 +31,7 @@ func IsNil(i interface{}) bool {
 func Get(i interface{}, name string) (value interface{}, err error) {
 	// printv(i, name)
 
-	if IsNil(i) {
+	if IsNil(i) || i == nil{
 		return
 	}
 
